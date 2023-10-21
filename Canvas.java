@@ -16,7 +16,7 @@ public class Canvas extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        this.cls(g, new Color(0x449911));
+        this.cls(g, new Color(0x000000));
     }
 
     public void cls(Graphics g, Color c) {
@@ -26,7 +26,8 @@ public class Canvas extends JPanel {
 
     public void print(Graphics g, double x, double y, double w, double h, Color c) {
         g.setColor(c);
-        g.fillRect(Utils.redondear(x), Utils.redondear(y), Utils.redondear(w), Utils.redondear(h));
+        g.fillRect(Utils.redondear(Main.ventana.getWidth() * 0.5 + x),
+                Utils.redondear(Main.ventana.getHeight() * 0.5 + y), Utils.redondear(w), Utils.redondear(h));
     }
 
     public void printext(Graphics g, String msg, int x, int y, String fnt, int d, Color c) {

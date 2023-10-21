@@ -2,9 +2,9 @@ import javax.swing.*;
 
 public class Ventana extends JFrame {
     public Ventana() {
-        setTitle("3d | trmaa");
+        setTitle("JUEGO | trmaa");
 
-        setSize(800, 800);
+        setSize(1280, 720);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         ImageIcon ico = new ImageIcon("icono.jpg");
